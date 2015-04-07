@@ -99,9 +99,7 @@ public class WordCounter extends Application {
 		
 		menuEdit.getItems().addAll(itemCut, itemCopy, itemPaste, new SeparatorMenuItem(), itemSelect);
 		
-		Menu menuView = new Menu("View");
-		Menu menuHelp = new Menu("Help");
-		menuBar.getMenus().addAll(menuFile, menuEdit, menuView, menuHelp);
+		menuBar.getMenus().addAll(menuFile, menuEdit);
 		return menuBar;
 	}
 	
