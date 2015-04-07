@@ -77,14 +77,11 @@ public class WordCounter extends Application {
 		MenuBar menuBar = new MenuBar();
 		
 		Menu menuFile = new Menu("File");
-		MenuItem itemLoad = new MenuItem("Load");
-		itemLoad.setAccelerator(KeyCombination.keyCombination("Ctrl+L"));
-		itemLoad.setOnAction(event -> new PopupBox());
 		
 		MenuItem itemExit = new MenuItem("Exit");
 		itemExit.setAccelerator(KeyCombination.keyCombination("Ctrl+Q"));
 		itemExit.setOnAction(event -> onDisable());
-		menuFile.getItems().addAll(itemLoad, new SeparatorMenuItem(), itemExit);
+		menuFile.getItems().addAll(itemExit);
 		
 		Menu menuEdit = new Menu("Edit");
 		MenuItem itemCut = new MenuItem("Cut");
